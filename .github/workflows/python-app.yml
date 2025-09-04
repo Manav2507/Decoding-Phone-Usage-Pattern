@@ -1,12 +1,12 @@
-name: Streamlit CI/CD
+name: ML Project CI
 
 on:
   push:
     branches: [ main ]
-  workflow_dispatch:
+  pull_request:
 
 jobs:
-  deploy:
+  build-test:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,13 +19,12 @@ jobs:
         python-version: '3.10'
 
     - name: Install dependencies
-      run: pip install --upgrade pip && pip install -r requirements.txt
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
 
-    - name: (Optional) Run tests
-      run: pytest || echo "No tests provided"
+    - name: Run tests
+      run: pytest || echo "No tests available"
 
-    - name: Deploy to Streamlit
-      uses: snkrsnk/streamlit-deploy-action@v1
-      with:
-        app_path: app.py
-
+    - name: Run training script
+      run: python src/train.py || echo "No training script"
