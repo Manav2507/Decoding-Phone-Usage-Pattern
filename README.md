@@ -5,9 +5,9 @@ An analytical project exploring mobile device usage across Indian cities. It com
 ---
 ## Demo ScreenShots
 
-![Picture](https://github.com/Manav2507/Decoding-Phone-Usage-Patterns-in-India-/blob/main/image/5_1.png)
-![Picture](https://github.com/Manav2507/Decoding-Phone-Usage-Patterns-in-India-/blob/main/image/5_2.png)
-![Picture](https://github.com/Manav2507/Decoding-Phone-Usage-Patterns-in-India-/blob/main/image/5_3.png)
+![Picture](https://github.com/Manav2507/Decoding-Phone-Usage-Pattern/blob/main/image/5_1.png)
+![Picture](https://github.com/Manav2507/Decoding-Phone-Usage-Pattern/blob/main/image/5_2.png)
+![Picture](https://github.com/Manav2507/Decoding-Phone-Usage-Pattern/blob/main/image/5_3.png)
 
 ## 📌 Project Overview
 
@@ -86,6 +86,7 @@ This project uses real-world-like mobile usage data to:
 - **iOS users** tend to have higher recharge costs and fewer apps  
 - A significant cluster of users has **low data + high call time** – ideal for voice plans  
 - **XGBoost** outperformed other models in classifying primary usage type with ~89% F1-score  
+
 
 
 
