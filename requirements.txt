@@ -1,0 +1,8 @@
+streamlit
+pandas
+scikit-learn
+matplotlib
+seaborn
+pillow
+streamlit-option-menu
+mlflow
