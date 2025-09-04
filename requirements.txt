@@ -6,3 +6,4 @@ seaborn
 pillow
 streamlit-option-menu
 mlflow
+pytest
